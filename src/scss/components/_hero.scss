@@ -2,4 +2,8 @@
 
 .hero-section{
     @include u.section(100vw, 25vh, column, center, center);
+    
+    img{
+        background-color: u.$secondary-background-color;
+    }
 }
