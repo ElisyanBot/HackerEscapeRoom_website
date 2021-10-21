@@ -4,12 +4,11 @@
     @include u.flex(row, center, center);
     
     width: 50%;
-    height: fit-content;
     gap: 2rem;
     
     transform: translateY(-15px);
 
      @media screen and(max-width: u.$tablet-size) {
-        flex-wrap: wrap; 
+        flex-direction: column; 
      }
 }
