@@ -1,0 +1,14 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin section($width, $height, $direction, $justify, $align){
+    @include flex($direction, $justify, $align);
+    width: 100%;
+    max-width: $width;
+    height: 100%;
+    max-height: $height;
+}
