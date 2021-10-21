@@ -9,6 +9,5 @@
     @include flex($direction, $justify, $align);
     width: 100%;
     max-width: $width;
-    height: 100%;
-    max-height: $height;
+    height: $height;
 }
