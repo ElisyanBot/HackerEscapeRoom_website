@@ -1,0 +1,5 @@
+@use '../utilities' as u;
+
+.hero-section{
+    @include u.section(100vw, 25vh, column, center, center);
+}
