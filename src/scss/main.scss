@@ -11,11 +11,16 @@ html{
     font-size: 62.5%;
     /*1 rem = 10px*/
     @media screen and (max-width: u.$tablet-size) {
+        font-size: 52.5%;
+    }
+
+    @media screen and (max-width: u.$mobile-size) {
         font-size: 42.5%;
     }
 }
 
 img{
+    display: block;
     width: 100%;
     height: 100%;
 }
