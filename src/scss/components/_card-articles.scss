@@ -1,17 +1,28 @@
 @use '../utilities' as u;
 
 section#card-articles-container {
-    @include u.section(100vw, fit-content, row, flex-start, center);
+    @include u.section(100vw, fit-content, row, center, center);
     padding: 15px;
+    gap: 3rem;
+    
     overflow-x: scroll;
     overflow-y: hidden;
 
-    gap: 3rem;
+    //hides scrollbar but keeps functionality
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    @media screen and(max-width: u.$tablet-size) {
+        justify-content: flex-start;   
+    }
 }
 
 article.card{
     @include u.section(250px, 250px, column, flex-start, space-evenly);
     min-width: 210px;
+    border: 1px solid gray;
+
     picture.card-top-part{
         height: 40%;
     }
