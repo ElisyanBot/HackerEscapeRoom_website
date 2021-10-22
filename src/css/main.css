@@ -184,6 +184,37 @@ article.review-article h3 {
   }
 }
 
+section#card-articles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  height: fit-content;
+  padding: 15px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 3rem;
+}
+
+article.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-evenly;
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  min-width: 210px;
+}
+article.card picture.card-top-part {
+  height: 40%;
+}
+article.card .card-bottom-part {
+  height: 60%;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,21 @@
+@use '../utilities' as u;
+
+section#card-articles-container {
+    @include u.section(100vw, fit-content, row, flex-start, center);
+    padding: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    gap: 3rem;
+}
+
+article.card{
+    @include u.section(250px, 250px, column, flex-start, space-evenly);
+    min-width: 210px;
+    picture.card-top-part{
+        height: 40%;
+    }
+    .card-bottom-part{
+        height: 60%;
+    }
+}
