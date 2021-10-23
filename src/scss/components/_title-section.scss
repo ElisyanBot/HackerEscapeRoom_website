@@ -1,0 +1,10 @@
+@use "../utilities" as u;
+
+.title-section{
+    @include u.section(100vw, 15vh, row, center, center);
+
+    h2{
+        font-size: u.$big-font;
+    }
+}
+
