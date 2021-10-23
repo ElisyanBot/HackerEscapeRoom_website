@@ -10,6 +10,7 @@
 
     
 @media screen and (max-width: u.$tablet-size) {
+    //selects all element with and after second child article
     & article:nth-child(n+2){
          display: none;
      }
