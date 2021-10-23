@@ -93,12 +93,24 @@ header nav ul {
 }
 
 .primary-btn, .secondary-btn, .third-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   background-color: blue;
   min-width: 20px;
   padding: 10px 25px;
   border: none;
   border-radius: 5px;
   color: white;
+}
+.primary-btn span.btn-icon, .secondary-btn span.btn-icon, .third-btn span.btn-icon {
+  background-color: blue;
+  display: inline-block;
+  color: blue;
+  width: 2rem;
+  height: 2rem;
 }
 
 .secondary-btn {
@@ -117,7 +129,7 @@ header nav ul {
   }
 }
 
-.button-container {
+.button-container, .button-container-challenges {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,9 +139,14 @@ header nav ul {
   transform: translateY(-15px);
 }
 @media screen and (max-width: 820px) {
-  .button-container {
+  .button-container, .button-container-challenges {
     flex-direction: column;
   }
+}
+
+.button-container-challenges {
+  margin: auto;
+  height: 15vh;
 }
 
 .review-article-container {
@@ -279,6 +296,19 @@ article.card .card-bottom-part .card-btn-container {
 }
 article.card .card-bottom-part .card-btn-container button {
   padding: 1rem 1.5rem;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  height: 15vh;
+}
+.title-section h2 {
+  font-size: 3rem;
 }
 
 * {
