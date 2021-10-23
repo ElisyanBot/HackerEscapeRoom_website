@@ -209,15 +209,76 @@ article.card {
   align-items: space-evenly;
   width: 100%;
   max-width: 250px;
-  height: 250px;
+  height: 30rem;
   min-width: 210px;
   border: 1px solid gray;
 }
 article.card picture.card-top-part {
+  position: relative;
   height: 40%;
+}
+article.card picture.card-top-part span.fa {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+article.card picture.card-top-part .rating-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+article.card picture.card-top-part .rating-stars li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.6rem;
+  height: fit-content;
+}
+article.card picture.card-top-part .rating-stars li.checked {
+  color: blue;
 }
 article.card .card-bottom-part {
   height: 60%;
+  padding: 10px;
+}
+article.card .card-bottom-part .card-text-container {
+  height: 70%;
+  font-size: 1.2rem;
+}
+article.card .card-bottom-part .card-text-container h2 {
+  font-weight: normal;
+}
+article.card .card-bottom-part .card-text-container small {
+  font-weight: bold;
+}
+article.card .card-bottom-part .card-text-container p {
+  line-height: 1.5rem;
+  margin-top: 5px;
+}
+article.card .card-bottom-part .card-btn-container {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+article.card .card-bottom-part .card-btn-container button {
+  padding: 1rem 1.5rem;
 }
 
 * {
