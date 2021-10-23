@@ -1,0 +1,59 @@
+@use '../utilities' as u;
+
+#grid-articles-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1fr 1fr;
+
+    height: 60vh;
+
+    
+    .grid-child-one{
+        grid-column: span 6;
+    }
+    .grid-child-two{
+        grid-column: span 6;
+    }
+    .grid-child-three{
+        grid-column: span 6;
+
+    }
+    .grid-child-four{
+        grid-column: 1/7;
+        grid-row: 2;
+    }
+
+    @media screen and (max-width: u.$tablet-size){
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(4, 30vh);
+       height: fit-content;
+
+       .grid-child-four{
+        grid-column: 1/7;
+        grid-row: 4;
+    }
+    }
+
+}
+
+.grid-child-img{
+
+}
+
+.grid-child-text{
+    @include u.flex(column, center, center);
+
+    h2, p, div{
+        width: 60%;
+        height: 20%
+        
+    }
+    div{
+        @include u.flex(row, center, center);
+
+        @media screen and (max-width: u.$tablet-size){
+            flex-direction: column;
+        }
+    }
+}
+
