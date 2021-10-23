@@ -1,6 +1,6 @@
 @use '../utilities' as u;
 
-.button-container{
+.button-container, .button-container-challenges{
     @include u.flex(row, center, center);
     
     width: 50%;
@@ -11,4 +11,9 @@
      @media screen and(max-width: u.$tablet-size) {
         flex-direction: column; 
      }
+}
+
+.button-container-challenges{
+  margin: auto;
+  height: 15vh;
 }
