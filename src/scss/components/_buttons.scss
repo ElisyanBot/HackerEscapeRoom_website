@@ -1,6 +1,9 @@
 @use '../utilities' as u;
 
 .primary-btn, .secondary-btn, .third-btn{
+    @include u.flex(row, center, center);
+    gap: 1rem;
+
     background-color: u.$primary-btn-color;
     min-width: 20px;
     padding: 10px 25px ;
@@ -9,6 +12,14 @@
     border-radius: 5px;
 
     color: u.$secondary-btn-color;
+
+    span.btn-icon{
+        background-color: u.$primary-btn-color; //will be removed when logo is added
+        display: inline-block;
+        color: u.$primary-btn-color;
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .secondary-btn{
