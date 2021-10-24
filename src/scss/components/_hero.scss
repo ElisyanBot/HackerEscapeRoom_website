@@ -3,3 +3,23 @@
 .hero-section{
     @include u.section(100vw, 35vh, column, center, center);
 }
+
+#story-article-container{
+    @include u.section(100vw, 35vh, column, center, center);
+    
+    div{
+    @include u.flex(column, center, center);
+    width: 60%;
+    text-align: center;
+
+        h2{
+            font-size: u.$normal-font;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+#whiteSpace-container{
+    width: 100vw;
+    height: 15vh;
+}
