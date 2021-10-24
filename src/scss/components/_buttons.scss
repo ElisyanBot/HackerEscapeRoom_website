@@ -1,6 +1,9 @@
 @use '../utilities' as u;
 
-.primary-btn, .secondary-btn, .third-btn{
+.primary-btn, 
+.secondary-btn, 
+.third-btn, 
+.fourth-btn{
     @include u.flex(row, center, center);
     gap: 1rem;
 
@@ -22,18 +25,25 @@
     }
 }
 
-.secondary-btn{
+
+//third and fourth btn is a mix of first and second + a new look when screensize is for mobile
+
+.secondary-btn, 
+.fourth-btn{
     background-color: u.$secondary-btn-color;
     color: u.$primary-btn-color;
     
     border: 1px solid u.$primary-btn-color;
 }
 
-.third-btn{
+
+.third-btn, 
+.fourth-btn{
     @media screen and (max-width: u.$tablet-size) {
         background-color: u.$secondary-btn-color;
         color: u.$primary-btn-color;
         
+        border: none;
         border-bottom: 1px solid u.$primary-btn-color;
         border-radius: 0;
         padding: 4px;
