@@ -19,8 +19,14 @@
 
         h2{
             font-size: u.$normal-font;
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
+
+            @media screen and (min-width:u.$tablet-size) {
+                margin-bottom: 5rem;
+                
+            }
         }
+        
     }
 }
 
