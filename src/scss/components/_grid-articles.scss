@@ -41,16 +41,20 @@
 
     h2, p, div{
         width: 60%;
-        height: 20%
-        
+        font-size: u.$normal-font;
     }
+
+    p{
+        margin: 2rem 0;
+    }
+
     //btn-container
     div{
         @include u.flex(row, center, center);
+        gap: 1rem;
 
         @media screen and (max-width: u.$tablet-size){
             flex-direction: column;
-            height: fit-content;
         }
     }
 }
