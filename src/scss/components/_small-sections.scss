@@ -34,4 +34,8 @@
 #whiteSpace-container{
     width: 100vw;
     height: 15vh;
+
+    @media screen and (max-width:u.$tablet-size) {
+        display: none;   
+    }
 }
