@@ -5,12 +5,14 @@
 
 //img-section
 .hero-section{
-    @include u.section(100vw, 35vh, column, center, center);
+    @include u.section(100vw, 46rem, column, center, center);
+    min-height: 60rem;
 }
 
 //text-section - text postion center
 #story-article-container{
-    @include u.section(100vw, 35vh, column, center, center);
+    @include u.section(100vw, 50vh, column, center, center);
+    background-color: u.$secondary-background-color;
     
     div{
     @include u.flex(column, center, center);
@@ -18,7 +20,10 @@
     text-align: center;
 
         h2{
-            font-size: u.$normal-font;
+            font-size: u.$big-font;
+            font-weight: 400;
+            color: u.$secondary-text-color;
+            
             margin-bottom: 2rem;
 
             @media screen and (min-width:u.$tablet-size) {
@@ -39,3 +44,13 @@
         display: none;   
     }
 }
+
+#title-section{
+    @include u.section(100vw, 20vh, row, center, center);
+
+    h2{
+        font-size: u.$medium-header-font;
+        font-weight: 400;
+    }
+}
+

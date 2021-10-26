@@ -1,7 +1,7 @@
 @use '../utilities' as u;
 
 #testimonial-container{
-    @include u.section(100vw, 25vh, row, center, center);
+    @include u.section(100vw, 35vh, row, center, center);
     gap: 5rem;
 
     @media screen and (max-width: u.$tablet-size) {
@@ -14,7 +14,7 @@
 }
 
 .testimonial-quote{
-    @include u.flex(row, center, center);
+    @include u.flex(row, center, flex-start);
     width: 40%;
     gap: 1.5rem;
 
@@ -28,12 +28,14 @@
     }
 
     p{
-        font-size: u.$normal-font;
+        font-size: u.$medium-font;
+        font-style: italic;
+
         margin-bottom: 8px;
     }
 
     h3{
-        font-size: u.$small-font;
+        font-size: u.$normal-font;
         font-weight: bold;
     }
 

@@ -2,17 +2,19 @@
 
 footer{
     background-color: u.$secondary-background-color;
+    height: 50rem;
+    padding: 5rem 0;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-row: auto;
-
     row-gap: 5rem;
-    padding: 5rem 0;
-
+    align-content: center;
 
     //text container in footer
     div.footer-information-container{
         grid-column: 2/7;
+        color: u.$secondary-text-color;
 
         h3{
             font-size: u.$normal-font;
@@ -28,19 +30,19 @@ footer{
         }
 
     }
-
+    
     //navigation list for fotter
     nav.footer-nav{
         @include u.flex(row, space-evenly, space-between);
         grid-column: 7/11;
-    
-
+        
         li{
+            color: u.$secondary-text-color;
             list-style: none;
             font-size: u.$normal-font;
 
             a{
-                color: u.$primary-text-color;
+                color: u.$secondary-text-color;
                 text-decoration: none;
             }
         }

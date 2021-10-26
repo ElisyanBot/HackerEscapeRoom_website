@@ -2,288 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
     <link rel="stylesheet" href="src/css/main.css">
     <title>[ESC] hacker escape rooms</title>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <picture>
-                <img src="" alt="ESC logo">
-            </picture>
-            <div class="logo-text-container">
-                <h1>[ESC]</h1>
-                <h2>Hacker Escape Rooms</h2>
+    <div class="content-max-width">
+        <header>
+            <div class="logo-container">
+                <picture>
+                    <img src="src/img/esc-logo-img.jpg" alt="ESC logo">
+                    <source srcset="src/img/esc-logo-img-mobile.jpg" media="(max-width: 800px)">
+                </picture>
+                <div class="logo-text-container">
+                    <h1>Hacker Escape Rooms</h1>
+                </div>
             </div>
-        </div>
-
-        <!-- menu-nav destop/mobile -->
-        <nav>
-            <menu class="navList">
-                <li><a href="#">Play online</a></ö>
-                <li><a href="#">Play on-site</a></ö>
-                <li><a href="#">The story</a></ö>
-                <li> <a href="#">Contact us</a></ö>
-            </menu>
-        </nav>
-    </header>
-
-    <!--
-         content section start here!! 
+            <!-- menu-nav destop/mobile -->
+            <nav>
+                <ul class="navList">
+                    <li><a href="#">Play online</a></ö>
+                    <li><a href="#">Play on-site</a></ö>
+                    <li><a href="#">The story</a></ö>
+                    <li> <a href="#">Contact us</a></ö>
+                    </ul>
+            </nav>
+        </header>
+        <!--
+             content section start here!!
+            -->
+        <section class="hero-section"> <!-- img section -->
+            <img src="src/img/Hero-banner-img.jpg" alt="image: programmer at work, over sholder shoot">
+            <div class="button-container">
+                <button class="fourth-btn">Online Chanllenges</button>
+                <button class="third-btn">On-site Chanllenges</button>
+            </div>
+        </section>
+        
+        <!-- testimonials -->
+         <section id="testimonial-container">
+            <div class="testimonial-quote">
+                <picture>
+                    <img src="src/img/testimonial-img-one.jpg" alt="image: portrait photo of testimonial author">
+                </picture>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Porro aspernatur sunt nisi praesentium quis.
+                        Iure eveniet quas qui natus eaque!
+                    </p>
+                    <h3>
+                        <span> - </span>
+                        Quote Author
+                    </h3>
+                </div>
+            </div>
+            <div class="testimonial-quote">
+                <picture>
+                    <img src="src/img/testimonial-img-one.jpg" alt="image: portrait photo of testimonial author">
+                </picture>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Porro aspernatur sunt nisi praesentium quis.
+                        Iure eveniet quas qui natus eaque!
+                    </p>
+                    <h3>
+                        <span> - </span>
+                        Quote Author
+                    </h3>
+                </div>
+            </div>
+        </section>
+          <!--
+            ======================== main content start here - (card section)  =============================
         -->
-    <section class="hero-section"> <!-- img section -->
-        <img src="src/img/Hero-banner-img.jpg" alt="image: programmer at work, over sholder shoot">
-        <div class="button-container">
-            <button class="primary-btn">Online Chanllenges</button>
-            <button class="third-btn">On-site Chanllenges</button>
-        </div>
-    </section>
-    
-    <!-- testimonials -->
-     <section id="testimonial-container">
-        <div class="testimonial-quote">
-            <picture>
-                <img src="src/img/testimonial-img-one.jpg" alt="image: portrait photo of testimonial author">
-            </picture>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Porro aspernatur sunt nisi praesentium quis.
-                    Iure eveniet quas qui natus eaque!
-                </p>
-                <h3>
-                    <span> - </span>
-                    Quote Author 
-                </h3>
+        <!-- card articles for diffrent challenges -->
+        <main>
+            <section id="title-section">
+                <h2>Popular Chanllenges right now</h2>
+            </section>
+        
+         <!-- cards -->
+            <section id="card-articles-container">
+            <!-- first card -->
+                <article class="card">
+                    <picture class="card-top-part">
+                      <span class="fa">icon</span>
+                      <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
+                      <!-- rating-system -->
+                      <ul class="rating-stars">
+                        <li class="checked">&#9733;</li>
+                        <li class="checked">&#9733;</li>
+                        <li class="checked">&#9733;</li>
+                        <li class="checked">&#9733;</li>
+                        <li>&#9733;</li>
+                    </ul>
+                    </picture>
+                    <!-- text part-->
+                    <div class="card-bottom-part">
+                        <div class="card-text-container">
+                            <h2>title of challenges</h2>
+                            <small>2 participants</small>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Eligendi placeat ullam aspernatur enim nam nesciunt,
+                                consequatur adipisci est a doloribus.
+                            </p>
+                        </div>
+                        <div class="card-btn-container">
+                            <button class="primary-btn">Book this room</button>
+                        </div>
+                    </div>
+                </article>
+        
+            <!-- second card -->
+                <article class="card">
+                    <picture class="card-top-part">
+                        <span class="fa">icon</span>
+                        <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
+                      <!-- rating-system -->
+                        <ul class="rating-stars">
+                            <li class="checked">&#9733;</li>
+                            <li class="checked">&#9733;</li>
+                            <li class="checked">&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                        </ul>
+                    </picture>
+                    <!-- text part-->
+                    <div class="card-bottom-part">
+                        <div class="card-text-container">
+                            <h2>title of challenge</h2>
+                            <small>2 participants</small>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Eligendi placeat ullam aspernatur enim nam nesciunt,
+                                consequatur adipisci est a doloribus.
+                            </p>
+                        </div>
+                        <div class="card-btn-container">
+                            <button class="primary-btn">Book this room</button>
+                        </div>
+                    </div>
+                </article>
+        
+             <!-- third card -->
+        
+                <article class="card">
+                    <picture class="card-top-part">
+                        <span class="fa">icon</span>
+                        <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
+                      <!-- rating-system -->
+                        <ul class="rating-stars">
+                            <li class="checked">&#9733;</li>
+                            <li class="checked">&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                            <li>&#9733;</li>
+                        </ul>
+                    </picture>
+                    <!-- text part-->
+                    <div class="card-bottom-part">
+                        <div class="card-text-container">
+                            <h2>title of challange</h2>
+                            <small>2 participants</small>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Eligendi placeat ullam aspernatur enim nam nesciunt,
+                                consequatur adipisci est a doloribus.
+                            </p>
+                        </div>
+                        <div class="card-btn-container">
+                            <button class="primary-btn"> Book this room </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        
+            <div class="button-container-challenges">
+                <button class="fourth-btn"> all online challenges </button>
+                <button class="third-btn"> all on-site challenges</button>
             </div>
-        </div>
-
-        <div class="testimonial-quote">
-            <picture>
-                <img src="src/img/testimonial-img-one.jpg" alt="image: portrait photo of testimonial author">
-            </picture>
-            <div>
+        </main>
+        <!--
+            ======================== main content --- ENDS --- here =============================
+        -->
+            <section id="story-article-container">
+                <div>
+                    <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis debitis officiis nesciunt quidem nihil.
+                        Rerum aspernatur reprehenderit ipsa praesentium dolorum.
+                    </h2>
+                    <button class="secondary-btn">Read the full story</button>
+                </div>
+            </section>
+           
+         <!-- grid section with articles -->
+           <section id="grid-articles-container">
+                <picture class="grid-child-img grid-child-one">
+                    <img src="src/img/grid-article-img-one.jpg" alt="image: office workers, in office working, on computer">
+                </picture>
+                <article class="grid-child-text grid-child-two">
+                    <h2>
+                        Play with your friends or build your team
+                        stronger at work
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Dolorem, beatae in nemo sed impedit
+                        expedita quasi est quidem saepe perspiciatis perferendis dolore.
+                    </p>
+                    <div>
+                        <button class="primary-btn"> Book on-site today </button>
+                    </div>
+                </article>
+                <picture class="grid-child-img grid-child-three">
+                    <img src="src/img/grid-article-img-two.jpg" alt="image: girl working att desktop-computer">
+                </picture>
+                <article class="grid-child-text grid-child-four">
+                    <h2>
+                        Play online or visit venue for one of our 25
+                        our 25 escape rooms
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Dolorem, beatae in nemo sed impedit
+                        expedita quasi est quidem saepe perspiciatis perferendis dolore.
+                    </p>
+                    <div>
+                        <button class="primary-btn"> see all challenges </button>
+                    </div>
+                </article>
+            </section>
+        <!-- obs! whiteSpace, no content -->
+            <section id="whiteSpace-container">
+                <!-- this is just empty space -->
+            </section>
+        
+        <!--
+        ========================= end of content section =========================
+        -->
+        <footer>
+            <div class="footer-information-container">
+                <h3>[ESC] Hacker Escape Rooms</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Porro aspernatur sunt nisi praesentium quis.
-                    Iure eveniet quas qui natus eaque!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati,
+                    exercitationem! Suscipit, animi necessitatibus, ea
+                    quis cupiditate tenetur quasi harum cum repellendus libero praesentium.
                 </p>
-                <h3>
-                    <span> - </span>
-                    Quote Author 
-                </h3>
             </div>
-        </div>
-    </section>
-
-      <!--
-        ======================== main content start here - (card section)  =============================
-    -->
-    <!-- card articles for diffrent challenges -->
-    <main>
-        <section class="title-section">
-            <h2>Popular Chanllenges right now</h2>
-        </section>
-    
-     <!-- cards -->
-        <section id="card-articles-container">
-        <!-- first card -->
-            <article class="card">
-                <picture class="card-top-part">
-                  <span class="fa">icon</span>
-                  <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
-                  <!-- rating-system -->
-                  <ul class="rating-stars">
-                    <li class="checked">&#9733;</li>
-                    <li class="checked">&#9733;</li>
-                    <li class="checked">&#9733;</li>
-                    <li class="checked">&#9733;</li>
-                    <li>&#9733;</li>
+            <nav class="footer-nav">
+                <!-- first nav-link list -->
+                <ul>
+                    <li class="bold-text">Site map</li>
+                    <li><a href="#"> the Story </a></li>
+                    <li><a href="#"> Contact Us</a></li>
+                    <li><a href="#"> Legal</a></li>
+                    <li class="margin-up"> <a href="#">Play Online</a></li>
+                    <li><a href="#"> Play on-site </a></li>
                 </ul>
-                </picture>
-                <!-- text part-->
-                <div class="card-bottom-part">
-                    <div class="card-text-container">
-                        <h2>title of challenges</h2>
-                        <small>2 participants</small>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Eligendi placeat ullam aspernatur enim nam nesciunt,
-                            consequatur adipisci est a doloribus.
-                        </p>
-                    </div>
-                    <div class="card-btn-container">
-                        <button class="primary-btn">take challenge online</button>
-                    </div>
-                </div>
-            </article>
-        
-        <!-- second card -->
-
-            <article class="card">
-                <picture class="card-top-part">
-                    <span class="fa">icon</span>
-                    <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
-                  <!-- rating-system -->
-                    <ul class="rating-stars">
-                        <li class="checked">&#9733;</li>
-                        <li class="checked">&#9733;</li>
-                        <li class="checked">&#9733;</li>
-                        <li>&#9733;</li>
-                        <li>&#9733;</li>
-                    </ul>
-                </picture>
-                <!-- text part-->
-                <div class="card-bottom-part">
-                    <div class="card-text-container">
-                        <h2>title of challenge</h2>
-                        <small>2 participants</small>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Eligendi placeat ullam aspernatur enim nam nesciunt,
-                            consequatur adipisci est a doloribus.
-                        </p>
-                    </div>
-                    <div class="card-btn-container">
-                        <button class="primary-btn">take challenge online</button>
-                    </div>
-                </div>
-            </article>
-        
-         <!-- third card -->
-        
-            <article class="card">
-                <picture class="card-top-part">
-                    <span class="fa">icon</span>
-                    <img src="src/img/card-img-one.jpg" alt="image: programmer at work, over sholder shoot">
-                  <!-- rating-system -->
-                    <ul class="rating-stars">
-                        <li class="checked">&#9733;</li>
-                        <li class="checked">&#9733;</li>
-                        <li>&#9733;</li>
-                        <li>&#9733;</li>
-                        <li>&#9733;</li>
-                    </ul>
-                </picture>
-                <!-- text part-->
-                <div class="card-bottom-part">
-                    <div class="card-text-container">
-                        <h2>title of challange</h2>
-                        <small>2 participants</small>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Eligendi placeat ullam aspernatur enim nam nesciunt,
-                            consequatur adipisci est a doloribus.
-                        </p>
-                    </div>
-                    <div class="card-btn-container">
-                        <button class="primary-btn">take challenge online</button>
-                    </div>
-                </div>
-            </article>
-        </section>
-        
-        <div class="button-container-challenges">
-            <button class="fourth-btn"><span class="btn-icon"></span> all online challenges </button>
-            <button class="fourth-btn"><span class="btn-icon"></span> all on-site challenges</button>
-        </div>
-    </main>
-
-    <!--
-        ======================== main content ends here =============================
-    -->
-
-        <section id="story-article-container">
-            <div>
-                <h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis debitis officiis nesciunt quidem nihil.
-                    Rerum aspernatur reprehenderit ipsa praesentium dolorum.
-                </h2>
-                <button class="secondary-btn">Read the full story</button>
-            </div>
-        </section>
-   
- <!-- grid section with articles -->
-       <section id="grid-articles-container">
-            <picture class="grid-child-img grid-child-one">
-                <img src="src/img/grid-article-img-one.jpg" alt="image: office workers, in office working, on computer">
-            </picture>
-
-            <article class="grid-child-text grid-child-two">
-                <h2>
-                    Play with your friends or build your team
-                    stronger at work
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Dolorem, beatae in nemo sed impedit
-                    expedita quasi est quidem saepe perspiciatis perferendis dolore.
-                </p>
-                <div>
-                    <button class="primary-btn"> Book on-site today </button>
-                </div>
-            </article>
-
-            <picture class="grid-child-img grid-child-three">
-                <img src="src/img/grid-article-img-two.jpg" alt="image: girl working att desktop-computer">
-            </picture>
-
-            <article class="grid-child-text grid-child-four">
-                <h2>
-                    Play online or visit venue for one of our 25
-                    our 25 escape rooms
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Dolorem, beatae in nemo sed impedit
-                    expedita quasi est quidem saepe perspiciatis perferendis dolore.
-                </p>
-                <div>
-                    <button class="primary-btn"> <span class="btn-icon"></span> Play online </button>
-                    <button class="third-btn"> <span class="btn-icon"></span> Book on-site </button>
-                </div>
-            </article>         
-        </section>
-   
-    <!-- obs! whiteSpace, no content -->
-        <section id="whiteSpace-container">
-            <!-- this is just empty space -->
-        </section>
-
-<!-- 
-    ========================= end of conten section =========================
--->
-    <footer>
-        <div class="footer-information-container">
-            <h3>[ESC] Hacker Escape Rooms</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, 
-                exercitationem! Suscipit, animi necessitatibus, ea 
-                quis cupiditate tenetur quasi harum cum repellendus libero praesentium.
-            </p>
-        </div>
-        <nav class="footer-nav">
-            <!-- first nav-link list -->
-            <ul>
-                <li class="bold-text">Site map</li>
-                <li><a href="#"> the Story </a></li>
-                <li><a href="#"> Contact Us</a></li>
-                <li><a href="#"> Legal</a></li>
-
-                <li class="margin-up"> <a href="#">Play Online</a></li>
-                <li><a href="#"> Play on-site </a></li>
-            </ul>
-            <!--second nav-link list -->
-            <ul>
-                <li class="bold-text">Follow us on</li>
-                <li><a target="_blank" href="https://www.facebook.com">Facebook</a></li>
-                <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-                <li><a target="_blank" href="https://www.youtube.com">Youtube</a></li>
-            </ul>
-        </nav>
-    </footer>
+                <!--second nav-link list -->
+                <ul>
+                    <li class="bold-text">Follow us on</li>
+                    <li><a target="_blank" href="https://www.facebook.com">Facebook</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
+                    <li><a target="_blank" href="https://www.youtube.com">Youtube</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>

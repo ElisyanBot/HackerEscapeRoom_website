@@ -4,9 +4,6 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 1fr 1fr;
-
-    height: 60vh;
-
     
     .grid-child-one{
         grid-column: span 6;
@@ -25,8 +22,7 @@
 
     @media screen and (max-width: u.$tablet-size){
        grid-template-columns: 1fr;
-       grid-template-rows: repeat(4, 30vh);
-       height: fit-content;
+       grid-template-rows: repeat(4, auto);
 
        .grid-child-four{
         grid-column: 1/7;
@@ -37,7 +33,7 @@
 }
 
 .grid-child-img{
-    height: 30vh;
+    // height: 46rem;
     img{
         object-position: 0 10%;
     }
@@ -46,24 +42,37 @@
 
 .grid-child-text{
     @include u.flex(column, center, center);
+    height: 46rem;
+    gap: 1rem;
 
     h2, p, div{
         width: 60%;
-        font-size: u.$normal-font;
     }
 
     p{
+        font-size: u.$normal-font;
         margin: 2rem 0;
+    }
+
+    h2{
+        font-size: u.$small-header-font;
     }
 
     //btn-container
     div{
-        @include u.flex(row, center, center);
+
+        @include u.flex(row, flex-start, center);
         gap: 1rem;
 
         @media screen and (max-width: u.$tablet-size){
             flex-direction: column;
         }
+
+        button{
+            font-size: u.$normal-font;
+        }
     }
+
+
 }
 

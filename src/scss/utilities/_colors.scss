@@ -1,13 +1,18 @@
-$primary-btn-color: blue;
-$secondary-btn-color: white;
 
 $primary-background-color: white;
-$secondary-background-color: gray;
+$secondary-background-color: #011827;
 
-$primary-text-color: black;
+$primary-text-color: #011827;
 $secondary-text-color: white;
 
-$rating-color: white;
-$checked-rating-color:blue;
 
 $card-icon-color:black;
+
+$primary-btn-color: #E3170A;
+$secondary-btn-color: #8ACFE5;
+
+$primary-btn-text-color: white;
+$secondary-btn-text-color: #011827;
+
+$rating-color: white;      
+$checked-rating-color: $primary-btn-color;
