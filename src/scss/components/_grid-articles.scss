@@ -36,6 +36,14 @@
 
 }
 
+.grid-child-img{
+    height: 30vh;
+    img{
+        object-position: 0 10%;
+    }
+    
+}
+
 .grid-child-text{
     @include u.flex(column, center, center);
 
