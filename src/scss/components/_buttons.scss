@@ -27,25 +27,7 @@
 }
 
 
-.secondary-btn{
-    background: none;
-    color: u.$secondary-btn-color;
-    
-    border: 1px solid u.$secondary-btn-color;
-
-    span.btn-icon{
-        background-color: u.$secondary-btn-color;
-        color: u.$primary-btn-text-color; //if font-awesome is used
-     }
-}
-
-
-.third-btn{
-    color: u.$secondary-btn-text-color;
-    background-color: u.$secondary-btn-color;
-} 
-
-.fourth-btn{
+.primary-btn{
     @media screen and (max-width: u.$tablet-size) {
         background: none;
         
@@ -58,4 +40,25 @@
          }
     }
 }
+
+.secondary-btn{
+    color: u.$secondary-btn-text-color;
+    background-color: u.$secondary-btn-color;
+} 
+
+.third-btn{
+    background: none;
+    color: u.$secondary-btn-color;
+    
+    border: 1px solid u.$secondary-btn-color;
+
+    span.btn-icon{
+        background-color: u.$secondary-btn-color;
+        color: u.$primary-btn-text-color; //if font-awesome is used
+     }
+}
+
+
+
+
 
