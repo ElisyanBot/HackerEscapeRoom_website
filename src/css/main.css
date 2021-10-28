@@ -82,41 +82,22 @@ header div.logo-container picture {
 header div.logo-container picture img {
   object-fit: scale-down;
 }
-header div.logo-container .logo-text-container {
+header div.logo-container div.logo-text-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
   height: inherit;
 }
-header div.logo-container .logo-text-container h1 {
+header div.logo-container div.logo-text-container h1 {
   color: white;
   font-size: 4rem;
 }
 @media screen and (max-width: 840px) {
-  header div.logo-container .logo-text-container h1 {
+  header div.logo-container div.logo-text-container h1 {
     font-size: 2.4rem;
     max-width: 90px;
   }
-}
-header nav {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  list-style-type: none;
-}
-header nav ul li a {
-  font-size: 1.8rem;
-  color: white;
 }
 @media screen and (max-width: 840px) {
   header {
@@ -144,11 +125,33 @@ header nav ul li a {
     justify-content: center;
     align-items: flex-start;
   }
-  header nav {
+}
+
+nav.header-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+nav.header-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+nav.header-nav ul li a {
+  font-size: 1.8rem;
+  color: white;
+}
+@media screen and (max-width: 840px) {
+  nav.header-nav nav.header-nav {
     background-color: gray;
     width: 30%;
   }
-  header nav ul {
+  nav.header-nav nav.header-nav ul {
     display: none;
   }
 }
@@ -277,7 +280,8 @@ header nav ul li a {
   color: white;
 }
 
-.button-container, .button-container-challenges {
+.button-container,
+.button-container-challenges {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -287,7 +291,8 @@ header nav ul li a {
   transform: translateY(-3.3rem);
 }
 @media screen and (max-width: 840px) {
-  .button-container, .button-container-challenges {
+  .button-container,
+.button-container-challenges {
     flex-direction: column-reverse;
   }
 }
@@ -384,11 +389,12 @@ article.card {
   box-shadow: 0px 0px 15px #929292;
   overflow: hidden;
 }
-article.card picture.card-top-part {
+
+picture.card-top-part {
   position: relative;
   height: 50%;
 }
-article.card picture.card-top-part span.fa {
+picture.card-top-part span.fa {
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -400,7 +406,7 @@ article.card picture.card-top-part span.fa {
   right: 5%;
   top: 10%;
 }
-article.card picture.card-top-part .rating-stars {
+picture.card-top-part ul.rating-stars {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -411,7 +417,7 @@ article.card picture.card-top-part .rating-stars {
   left: 5%;
   bottom: 5%;
 }
-article.card picture.card-top-part .rating-stars li {
+picture.card-top-part ul.rating-stars li {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -419,30 +425,31 @@ article.card picture.card-top-part .rating-stars li {
   color: white;
   font-size: 1.6rem;
 }
-article.card picture.card-top-part .rating-stars li.checked {
+picture.card-top-part ul.rating-stars li.checked {
   color: #E3170A;
 }
-article.card div.card-bottom-part {
+
+div.card-bottom-part {
   height: 50%;
   padding: 10px;
 }
-article.card div.card-bottom-part .card-text-container {
+div.card-bottom-part .card-text-container {
   height: 70%;
 }
-article.card div.card-bottom-part .card-text-container h2 {
+div.card-bottom-part .card-text-container h2 {
   font-weight: 400;
   font-size: 2.8rem;
 }
-article.card div.card-bottom-part .card-text-container small {
+div.card-bottom-part .card-text-container small {
   font-size: 1.4rem;
 }
-article.card div.card-bottom-part .card-text-container p {
+div.card-bottom-part .card-text-container p {
   line-height: 1.5rem;
   margin-top: 5%;
   line-height: 2rem;
   font-size: 1.8rem;
 }
-article.card div.card-bottom-part div.card-btn-container {
+div.card-bottom-part div.card-btn-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -450,13 +457,13 @@ article.card div.card-bottom-part div.card-btn-container {
   height: 30%;
   margin-top: 0.6rem;
 }
-article.card div.card-bottom-part div.card-btn-container button {
+div.card-bottom-part div.card-btn-container button {
   height: 4.4rem;
   width: 18rem;
   font-size: 1.8rem;
 }
 @media screen and (max-width: 840px) {
-  article.card div.card-bottom-part div.card-btn-container button {
+  div.card-bottom-part div.card-btn-container button {
     height: 4rem;
   }
 }
@@ -502,7 +509,9 @@ article.card div.card-bottom-part div.card-btn-container button {
   height: 46rem;
   gap: 1rem;
 }
-.grid-child-text h2, .grid-child-text p, .grid-child-text div {
+.grid-child-text h2,
+.grid-child-text p,
+.grid-child-text div {
   width: 60%;
 }
 .grid-child-text p {
@@ -539,45 +548,47 @@ footer {
   row-gap: 5rem;
   align-content: center;
 }
-footer div.footer-information-container {
+
+div.footer-information-container {
   grid-column: 2/7;
   color: white;
 }
-footer div.footer-information-container h3 {
+div.footer-information-container h3 {
   font-size: 1.8rem;
 }
-footer div.footer-information-container p {
+div.footer-information-container p {
   font-size: 1.8rem;
 }
 @media screen and (max-width: 840px) {
-  footer div.footer-information-container {
+  div.footer-information-container {
     grid-column: 3/12;
     grid-row: 1/2;
   }
 }
-footer nav.footer-nav {
+
+nav.footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: space-between;
   grid-column: 7/11;
 }
-footer nav.footer-nav li {
+nav.footer-nav li {
   color: white;
   list-style: none;
   font-size: 1.8rem;
 }
-footer nav.footer-nav li a {
+nav.footer-nav li a {
   color: white;
 }
-footer nav.footer-nav li.bold-text {
+nav.footer-nav li.bold-text {
   font-weight: bold;
 }
-footer nav.footer-nav li.margin-up {
+nav.footer-nav li.margin-up {
   margin-top: 1.5rem;
 }
 @media screen and (max-width: 840px) {
-  footer nav.footer-nav {
+  nav.footer-nav {
     grid-column: 2/12;
     grid-row: 2/2;
   }

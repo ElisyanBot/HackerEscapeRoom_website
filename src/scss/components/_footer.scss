@@ -10,54 +10,53 @@ footer{
     grid-row: auto;
     row-gap: 5rem;
     align-content: center;
+}
 
-    //text container in footer
-    div.footer-information-container{
-        grid-column: 2/7;
-        color: u.$secondary-text-color;
+//text container in footer
+div.footer-information-container{
+    grid-column: 2/7;
+    color: u.$secondary-text-color;
 
-        h3{
-            font-size: u.$normal-font;
-        }
-
-        p{
-            font-size: u.$normal-font;
-        }
-
-        @media screen and (max-width: u.$tablet-size) {
-            grid-column: 3/12;
-            grid-row: 1/2;
-        }
-
+    h3{
+        font-size: u.$normal-font;
     }
+
+    p{
+        font-size: u.$normal-font;
+    }
+
+    @media screen and (max-width: u.$tablet-size) {
+        grid-column: 3/12;
+        grid-row: 1/2;
+    }
+
+}
+
+//navigation list for fotter
+nav.footer-nav{
+    @include u.flex(row, space-evenly, space-between);
+    grid-column: 7/11;
     
-    //navigation list for fotter
-    nav.footer-nav{
-        @include u.flex(row, space-evenly, space-between);
-        grid-column: 7/11;
-        
-        li{
+    li{
+        color: u.$secondary-text-color;
+        list-style: none;
+        font-size: u.$normal-font;
+
+        a{
             color: u.$secondary-text-color;
-            list-style: none;
-            font-size: u.$normal-font;
-
-            a{
-                color: u.$secondary-text-color;
-            }
-        }
-
-            li.bold-text{
-                font-weight: bold;
-            }
-
-            li.margin-up{
-                margin-top: 1.5rem;
-            }
-
-        @media screen and (max-width: u.$tablet-size) {
-            grid-column: 2/12;
-            grid-row: 2/2;
         }
     }
 
+        li.bold-text{
+            font-weight: bold;
+        }
+
+        li.margin-up{
+            margin-top: 1.5rem;
+        }
+
+    @media screen and (max-width: u.$tablet-size) {
+        grid-column: 2/12;
+        grid-row: 2/2;
+    }
 }

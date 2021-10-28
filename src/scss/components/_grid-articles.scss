@@ -45,7 +45,9 @@
     height: 46rem;
     gap: 1rem;
 
-    h2, p, div{
+    h2,
+    p, 
+    div {
         width: 60%;
     }
 
@@ -73,7 +75,5 @@
             font-size: u.$normal-font;
         }
     }
-
-
 }
 

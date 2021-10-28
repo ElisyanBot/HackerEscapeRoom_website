@@ -1,6 +1,7 @@
 @use '../utilities' as u;
 
-.button-container, .button-container-challenges{
+.button-container,
+.button-container-challenges {
     @include u.flex(row, center, center);
     width: 50%;
     gap: 1rem;
@@ -12,7 +13,7 @@
      }
 }
 
-.button-container-challenges{
+.button-container-challenges {
    transform: translateY(0rem);
    margin: auto;
    min-height: 25vh;
