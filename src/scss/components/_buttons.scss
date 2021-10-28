@@ -1,5 +1,12 @@
 @use '../utilities' as u;
 
+//primary btn: red background, changes to no background and underline in mobile
+//secondary btn: light blue background, no changes in mobile
+//third btn: no background, light blue text and border, no changes in mobiler
+
+//fourth btn: === primary-btn but no changes in mobile mode
+    // OBS! btns in article cards uses fourth btn and gets small changes in components/_card-articles.scss
+
 .primary-btn, 
 .secondary-btn, 
 .third-btn, 
