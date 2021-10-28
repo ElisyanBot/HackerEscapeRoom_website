@@ -66,6 +66,7 @@
 
         @media screen and (max-width: u.$tablet-size){
             flex-direction: column;
+            align-items: flex-start;
         }
 
         button{

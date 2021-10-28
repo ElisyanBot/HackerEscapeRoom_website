@@ -464,6 +464,7 @@ article.card div.card-bottom-part div.card-btn-container button {
 @media screen and (max-width: 840px) {
   .grid-child-text div {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .grid-child-text div button {
