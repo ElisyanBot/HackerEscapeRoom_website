@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .meny-hover-link li:hover a {
   color: #8ACFE5;
 }
