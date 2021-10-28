@@ -443,16 +443,22 @@ article.card div.card-bottom-part .card-text-container p {
   font-size: 1.8rem;
 }
 article.card div.card-bottom-part div.card-btn-container {
-  height: 30%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  height: 30%;
+  margin-top: 0.6rem;
 }
 article.card div.card-bottom-part div.card-btn-container button {
   height: 4.4rem;
   width: 18rem;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 840px) {
+  article.card div.card-bottom-part div.card-btn-container button {
+    height: 4rem;
+  }
 }
 
 #grid-articles-container {
