@@ -42,6 +42,14 @@ img {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+.meny-hover-link li:hover a {
+  color: #8ACFE5;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -103,7 +111,6 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li a {
-  text-decoration: none;
   font-size: 1.8rem;
   color: white;
 }
@@ -552,7 +559,6 @@ footer nav.footer-nav li {
 }
 footer nav.footer-nav li a {
   color: white;
-  text-decoration: none;
 }
 footer nav.footer-nav li.bold-text {
   font-weight: bold;
