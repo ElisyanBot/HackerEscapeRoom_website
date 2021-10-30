@@ -46,25 +46,24 @@ picture.card-top-part{
         right: 5%;
         top: 10%;
     }
+}
 
-    ul.rating-stars{
+/* ========== star rating system on card articles ===== */
+
+ul.rating-stars{
+    @include u.flex(row, flex-start, center);
+    list-style: none;
+    gap: 1rem;
+
+    li{
         @include u.flex(row, center, center);
-        list-style: none;
-        gap: 1rem;
-
-        position: absolute;
-        left: 5%;
-        bottom: 5%;
-
-        li{
-            @include u.flex(row, center, center);
-            color:  u.$rating-color;
-            font-size: 1.6rem;
-        } 
-        
-        li.checked{
-            color: u.$checked-rating-color;
-        }
+        color:  u.$rating-color;
+        font-size: u.$small-font;
+        -webkit-text-stroke: 1px  u.$checked-rating-color;
+    } 
+    
+    li.checked{
+        color: u.$checked-rating-color;
     }
 }
 
@@ -73,7 +72,7 @@ picture.card-top-part{
 
 div.card-bottom-part{
     height: 50%;
-    padding: 10px;
+    padding: 0 15px 10px 15px;
 
     .card-text-container{
         height: 70% ;
@@ -82,11 +81,16 @@ div.card-bottom-part{
             font-weight: 400;
             font-size: u.$big-font;
         }
-        
-        small{
-            font-size: u.$small-font;
-        }
 
+        div.card-subheader-container{
+            @include u.flex(row, space-between, center);
+            margin: auto;
+            
+            small{
+                font-size: u.$small-font;
+            }
+        }
+       
         p{
             line-height: 1.5rem;
             margin-top: 5%;
