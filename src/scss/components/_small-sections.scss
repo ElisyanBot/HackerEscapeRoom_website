@@ -4,7 +4,7 @@
 @use '../utilities' as u;
 
 //img-section
-.hero-section{
+#hero-section{
     @include u.section(100vw, 46rem, column, center, center);
     min-height: 60rem;
 }
