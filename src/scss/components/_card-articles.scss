@@ -48,26 +48,6 @@ picture.card-top-part{
     }
 }
 
-/* ========== star rating system on card articles ===== */
-
-ul.rating-stars{
-    @include u.flex(row, flex-start, center);
-    list-style: none;
-    gap: 1rem;
-
-    li{
-        @include u.flex(row, center, center);
-        color:  u.$rating-color;
-        font-size: u.$small-font;
-        -webkit-text-stroke: 1px  u.$checked-rating-color;
-    } 
-    
-    li.checked{
-        color: u.$checked-rating-color;
-    }
-}
-
-
 // ========= text container ===================
 
 div.card-bottom-part{
@@ -115,5 +95,24 @@ div.card-bottom-part{
                 height: 4rem;
             }
         }
+    }
+}
+
+/* ========== star rating system on card articles ===== */
+
+ul.rating-stars{
+    @include u.flex(row, flex-start, center);
+    list-style: none;
+    gap: 1rem;
+
+    li{
+        @include u.flex(row, center, center);
+        color:  u.$rating-color;
+        font-size: u.$small-font;
+        -webkit-text-stroke: 1px  u.$checked-rating-color;
+    } 
+    
+    li.checked{
+        color: u.$checked-rating-color;
     }
 }
