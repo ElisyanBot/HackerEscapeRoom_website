@@ -2,6 +2,8 @@
 
 header{
     @include u.section(100vw, 20vh , column, center, flex-start);
+    min-height: 11rem;
+    position: relative;
     background-color: u.$secondary-background-color;
     padding: 1rem;
 
@@ -66,20 +68,116 @@ nav.header-nav{
     height: 100%;
 
     ul {
-        @include u.section(100%, 100%, row , space-evenly, center);
+        @include u.section(100%, 100%, row, space-evenly, center);
 
-        li  a {
-            font-size: u.$normal-font;
-            color: u.$secondary-text-color;
+        li { 
+            list-style: none;
+            
+            a {
+                font-size: u.$normal-font;
+                color: u.$secondary-text-color;
+
+             }
         }
     }
     
     @media screen and (max-width: u.$tablet-size) {
-        background-color: gray;
-        width: 30%;
+        overflow: hidden; //hides elements if they show outside.
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+//========= meny-btn ===================
+button#meny-btn{
+    display: none;
+    @media screen and (max-width: u.$tablet-size) {
+        display: block;
+        height: 100%;
+        min-width: 10rem;
+    }
+}
+
+
+//========== mobile meny ==========
+nav.display-mobile-meny{
+    @media screen and (max-width: u.$tablet-size) {
+        @include u.flex(row, center, center);
+        background-color: rgba(153, 153, 153, 0.583);
+        width: 100vw;
+        height: 100vh;
         
-        ul {
-            display: none;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        opacity: 1;
+
+        animation-duration: 0.3s;
+        animation-name: openMeny;
+    }
+ }
+
+
+nav ul.display-mobile-meny-items{
+    @include u.flex(column, center, center);
+    background-color:u.$secondary-background-color;
+    width: 85%;
+    height: 95%;
+
+    list-style: none;
+    opacity: 1;
+
+    animation-duration: 0.4s;
+    animation-name: openMenyUl;
+
+    li {
+        padding: 3rem 0rem;
+        margin: 1rem 0.5rem;
+
+
+
+        a{
+            font-size: u.$large-header-font;
+           
+            
         }
+    }
+}
+
+
+/*================ keyframes mobile meny ==================*/
+
+@keyframes openMeny {
+    0%{
+        opacity: 0;
+      
+    }
+
+    1%{ 
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes openMenyUl {
+    0%{
+        opacity: 0;
+    }
+
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
