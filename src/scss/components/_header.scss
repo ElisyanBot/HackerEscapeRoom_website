@@ -86,10 +86,14 @@ nav.header-nav{
         width: 0;
         height: 0;
         opacity: 0;
+
+        ul li {
+            display: none;
+        }
     }
 }
 
-//========= meny-btn ===================
+//========= meny-btns ===================
 button#meny-btn{
     display: none;
     @media screen and (max-width: u.$tablet-size) {
@@ -99,21 +103,31 @@ button#meny-btn{
     }
 }
 
+button#close-menyBtn{
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+
+    width: 8rem;
+    height: 8rem;
+}
+
 
 //========== mobile meny ==========
 nav.display-mobile-meny{
     @media screen and (max-width: u.$tablet-size) {
         @include u.flex(row, center, center);
+        
         background-color: rgba(153, 153, 153, 0.583);
         width: 100vw;
         height: 100vh;
         
         position: absolute;
         top: 0;
-        z-index: 100;
+        z-index: 2;
         opacity: 1;
 
-        animation-duration: 0.3s;
+        animation-duration: 0.1s;
         animation-name: openMeny;
     }
  }
@@ -121,26 +135,25 @@ nav.display-mobile-meny{
 
 nav ul.display-mobile-meny-items{
     @include u.flex(column, center, center);
+    
     background-color:u.$secondary-background-color;
     width: 85%;
     height: 95%;
-
+    
+    position: relative;
     list-style: none;
     opacity: 1;
 
-    animation-duration: 0.4s;
+    animation-duration: 0.2s;
     animation-name: openMenyUl;
 
     li {
+        display: block;
         padding: 3rem 0rem;
         margin: 1rem 0.5rem;
 
-
-
         a{
             font-size: u.$large-header-font;
-           
-            
         }
     }
 }
