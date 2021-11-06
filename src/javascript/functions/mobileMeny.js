@@ -28,14 +28,12 @@ export default function DisplayMenyInMobile(){
     //closes the meny if you go from small-screan to desktop
     const tabletSize = window.matchMedia('(min-width: 840px)');
 
-    function closeMenyInDesktop (x){
-        if(x.matches){
+    function closeMenyInDesktop (screenSize){
+        if(screenSize.matches){
             menyBackground.classList.remove("display-mobile-meny");
             menyList.classList.remove("display-mobile-meny-items");
         }
     }
-
-    console.log(tabletSize)
     closeMenyInDesktop(tabletSize);
     tabletSize.addListener(closeMenyInDesktop)
 }
