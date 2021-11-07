@@ -178,6 +178,10 @@ button#meny-btn {
   display: block;
   height: 100%;
   min-width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 840px) {
   button#meny-btn {
@@ -191,6 +195,10 @@ button#close-menyBtn {
   right: 5rem;
   width: 8rem;
   height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 840px) {
   button#close-menyBtn {
@@ -397,6 +405,9 @@ nav ul.display-mobile-meny-items li a {
   background-color: #011827;
   border: none;
   color: white;
+}
+.meny-btn .fas {
+  font-size: 4rem;
 }
 
 .button-container,

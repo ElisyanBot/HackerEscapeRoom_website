@@ -74,4 +74,8 @@
     background-color: u.$secondary-background-color;
     border: none;
     color: u.$secondary-text-color;
+
+    .fas{
+        font-size: u.$large-header-font;
+    }
 }

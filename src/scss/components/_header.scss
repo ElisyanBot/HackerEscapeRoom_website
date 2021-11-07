@@ -99,6 +99,9 @@ button#meny-btn{
     height: 100%;
     min-width: 10rem;
     
+    @include u.flex(row, center, center);
+    
+
     @media screen and (min-width: u.$tablet-size) {
          display: none;
     }
@@ -111,6 +114,8 @@ button#close-menyBtn{
 
     width: 8rem;
     height: 8rem;
+
+    @include u.flex(row, center, center);
 
     @media screen and (min-width: u.$tablet-size) {
         display: none;
