@@ -4,39 +4,12 @@
 //secondary btn: light blue background, no changes in mobile
 //third btn: no background, light blue text and border, no changes in mobiler
 
-//fourth btn: === primary-btn but no changes in mobile mode
-    // OBS! btns in article cards uses fourth btn and gets small changes in components/_card-articles.scss
-
-.primary-btn, 
-.secondary-btn, 
-.third-btn, 
-.fourth-btn{
-    @include u.flex(row, center, center);
-    background-color: u.$primary-btn-color;
-    height: 6.6rem;
-    width: 30rem;
-
-    padding: 0 2rem ;
-    gap: 1rem;
-    
-    border: none;
-    border-radius: 5px;
-    
-    color: u.$primary-btn-text-color;
-    font-size: u.$medium-font;
-    font-weight: bold;
-
-    span.btn-icon{
-        background-color: u.$secondary-btn-color; //will be removed when logo is added
-        display: inline-block;
-        color: u.$secondary-btn-color; //if font-awesome is used
-        width: 2rem;
-        height: 2rem;
-    }
-}
+//fourth btn: === primary-btn but no changes in mobile mode (standard-btn)
+// OBS! btns in article cards uses fourth btn and gets small changes in components/_card-articles.scss
 
 
 .primary-btn{
+    @include u.standard-btn-styles;
     @media screen and (max-width: u.$tablet-size) {
         background: none;
         
@@ -46,16 +19,19 @@
         span.btn-icon{
             background-color: u.$primary-btn-color;
             color: u.$primary-btn-text-color;//if font-awesome is used
-         }
+        }
     }
 }
 
 .secondary-btn{
+    @include u.standard-btn-styles;
     color: u.$secondary-btn-text-color;
     background-color: u.$secondary-btn-color;
 } 
 
 .third-btn{
+    @include u.standard-btn-styles;
+
     background: none;
     color: u.$secondary-btn-color;
     
@@ -68,14 +44,6 @@
 }
 
 
-
-
-.meny-btn{
-    background-color: u.$secondary-background-color;
-    border: none;
-    color: u.$secondary-text-color;
-
-    .fas{
-        font-size: u.$large-header-font;
-    }
+.fourth-btn{
+    @include u.standard-btn-styles;
 }

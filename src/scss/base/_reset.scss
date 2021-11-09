@@ -37,9 +37,7 @@ img{
 }
 
 .content-max-width{
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
+    // @include u.content-max-width;
 }
 
 a{

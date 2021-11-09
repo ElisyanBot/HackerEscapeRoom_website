@@ -11,27 +11,27 @@ export default function DisplayMenyInMobile(){
        menyList.classList.add("display-mobile-meny-items");
     }) 
 
-    menyCloseBtn.addEventListener('click',() => {
+    function removeClass(){
         menyBackground.classList.remove("display-mobile-meny");
          menyList.classList.remove("display-mobile-meny-items");
+    }
 
+    menyCloseBtn.addEventListener('click',() => {
+        removeClass();
      })
 
     menyBackground.addEventListener('click',(e) => {
-            if(e.target === menyBackground ){
-                    menyBackground.classList.remove("display-mobile-meny");
-                    menyList.classList.remove("display-mobile-meny-items");
-              }
+        if(e.target === menyBackground ){
+                removeClass();
+            }
      })
-
 
     //closes the meny if you go from small-screan to desktop
     const tabletSize = window.matchMedia('(min-width: 840px)');
 
     function closeMenyInDesktop (screenSize){
         if(screenSize.matches){
-            menyBackground.classList.remove("display-mobile-meny");
-            menyList.classList.remove("display-mobile-meny-items");
+            removeClass();
         }
     }
     closeMenyInDesktop(tabletSize);

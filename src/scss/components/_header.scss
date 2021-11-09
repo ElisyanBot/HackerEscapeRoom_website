@@ -19,6 +19,7 @@ header{
 
 div.logo-container{
     @include u.section(100%, 100%, row , flex-start, center);
+    @include u.content-max-width; //needs to be below u.section
     height: 8.2rem;
 
     picture{
@@ -69,10 +70,12 @@ nav.header-nav{
 
     ul {
         @include u.section(100%, 100%, row, space-evenly, center);
+        @include u.content-max-width; //needs to be below u.section
+
 
         li { 
             list-style: none;
-            
+
             a {
                 font-size: u.$normal-font;
                 color: u.$secondary-text-color;
@@ -95,6 +98,7 @@ nav.header-nav{
 
 //========= meny-btns ===================
 button#meny-btn{
+    @include u.meny-btn;
     display: block;
     height: 100%;
     min-width: 10rem;
@@ -107,14 +111,16 @@ button#meny-btn{
     }
 }
 
-button#close-menyBtn{
+li#close-menyBtn{
+    @include u.meny-btn;
     position: absolute;
     top: 5rem;
     right: 5rem;
-
+    
     width: 8rem;
-    height: 8rem;
-
+    height: 4rem;
+    
+    display: none; //becomes display:flex at ul.display-mobile-meny-items
     @include u.flex(row, center, center);
 
     @media screen and (min-width: u.$tablet-size) {
@@ -123,7 +129,7 @@ button#close-menyBtn{
 }
 
 
-//========== mobile meny ==========
+//============================ mobile meny ============================
 nav.display-mobile-meny{
     @media screen and (max-width: u.$tablet-size) {
         @include u.flex(row, center, center);
@@ -156,6 +162,10 @@ nav ul.display-mobile-meny-items{
 
     animation-duration: 0.2s;
     animation-name: openMenyUl;
+
+    li#close-menyBtn{
+        display: flex;
+    }
 
     li {
         display: block;

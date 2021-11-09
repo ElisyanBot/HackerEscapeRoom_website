@@ -16,7 +16,7 @@
     
     div{
     @include u.flex(column, center, center);
-    width: 60%;
+    width: 50%;
     text-align: center;
 
         h2{
@@ -37,6 +37,7 @@
 
 //empty section
 #whiteSpace-container{
+    display: none;
     width: 100vw;
     height: 15vh;
 
