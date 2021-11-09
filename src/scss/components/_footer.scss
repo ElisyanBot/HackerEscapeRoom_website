@@ -2,8 +2,10 @@
 
 /* =========  flex version for new design (figma version) ====================*/
 footer{
-    @include u.section(100vw, 50vh, row, center, center);
     background-color: u.$secondary-background-color;
+    @include u.section(100vw, 50vh, row, center, center);
+
+    gap: 10%;
 
     @media screen and (max-width: u.$tablet-size) {
         height: 60vh;
