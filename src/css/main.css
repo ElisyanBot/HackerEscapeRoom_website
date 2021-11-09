@@ -200,11 +200,6 @@ li#close-menyBtn {
   background-color: #011827;
   border: none;
   color: white;
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width: 8rem;
-  height: 4rem;
   display: none;
   display: flex;
   flex-direction: row;
@@ -254,6 +249,14 @@ nav ul.display-mobile-meny-items {
 }
 nav ul.display-mobile-meny-items li#close-menyBtn {
   display: flex;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 8rem;
+  height: 4rem;
+}
+nav ul.display-mobile-meny-items li#close-menyBtn :hover {
+  cursor: pointer;
 }
 nav ul.display-mobile-meny-items li {
   display: block;

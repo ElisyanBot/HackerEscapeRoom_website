@@ -113,14 +113,8 @@ button#meny-btn{
 
 li#close-menyBtn{
     @include u.meny-btn;
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
-    
-    width: 8rem;
-    height: 4rem;
-    
     display: none; //becomes display:flex at ul.display-mobile-meny-items
+
     @include u.flex(row, center, center);
 
     @media screen and (min-width: u.$tablet-size) {
@@ -165,6 +159,16 @@ nav ul.display-mobile-meny-items{
 
     li#close-menyBtn{
         display: flex;
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        
+        width: 8rem;
+        height: 4rem;
+
+        :hover{
+            cursor: pointer;
+        }
     }
 
     li {
